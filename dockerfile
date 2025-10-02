@@ -4,7 +4,7 @@ FROM alpine:3.22
 # Install prerequisites
 RUN apk update && \
     apk upgrade --no-cache && \
-    apk add bash curl git ca-certificates oras
+    apk add bash curl git ca-certificates
 
 # Set desired versions
 ENV VERSION="1.3.0"
